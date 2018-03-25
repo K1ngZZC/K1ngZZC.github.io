@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+/* ==========================================================
+        General Demo Styles [not related to navbar]
+   ==========================================================*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    font-weight: 300;
+    color: #777;
+    margin: 30px 0;
+}
+
+strong {
+    font-weight: 600;
+    color: #333;
+}
+
+a {
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    margin: 30px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.content {
+    padding: 50px 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #eee !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #eee !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #eee !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #eee !important;
+}
+
+
+/* ==========================================================
+        Navbar Styles
+   ==========================================================*/
+nav.navbar {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border-bottom: none;
+    border-radius: 0;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+/* Navbar Brand */
+nav.navbar a.navbar-brand {
+    color: #fff;
+    font-weight: 600;
+}
+    nav.navbar a.navbar-brand:hover,
+    nav.navbar a.navbar-brand:focus {
+        color: inherit;
+    }
+
+
+/* Toggle Button */
+nav.navbar .navbar-toggle {
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 0;
+}
+    nav.navbar .navbar-toggle:hover,
+    nav.navbar .navbar-toggle:focus {
+        background: #fff;
+        color: #333;
+    }
+
+/* Navbar Components Holder */
+nav.navbar .navbar-collapse {
+    border: none;
+}
+
+/* Navbar links */
+nav.navbar ul.navbar-nav {
+    border: none;
+}
+
+nav.navbar ul.navbar-nav a {
+    color: #fff;
+}
+    nav.navbar ul.navbar-nav a:hover,
+    nav.navbar ul.navbar-nav a:focus {
+        color: #333;
+        background: #fff;
+    }
+
+
+
+/* Navbar Form */
+nav.navbar form.navbar-form input {
+    border-radius: 0 ;
+    border-color: #6172b9;
+    background: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+nav.navbar form.navbar-form button {
+    background: #6172b9;
+    color: #fff;
+    border-color: #6172b9;
+    border-radius: 0;
+    box-shadow: none !important;
+    outline: none;
+}
+    nav.navbar form.navbar-form button:hover {
+        background: #fff;
+        color: #6172b9;
+    }
+
+/* Navbar Button */
+nav.navbar button.navbar-btn {
+    border-radius: 0;
+    border-color: #6172b9;
+    background: #6172b9;
+    color: #fff;
+}
+    nav.navbar button.navbar-btn:hover {
+        background: #fff;
+        color: #6172b9;
+}
+ .carousel-inner .item img { 
+     height: 500px;
+     width: 100%; 
+}
+h3 {
+    margin-left: 100px;
+}
+div.tech {
+    padding-left: 100px;
+}
+ #copyright { 
+     background-color: #202020; 
+     height: 100px; color: #524f4f; 
+     text-align: center; 
+     font-size: 10px; 
+     padding-top: 6px; 
+}
+</style>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <!-- Navbar Container -->
+    <div class="container">
+
+        <!-- Navbar Header [contains both toggle button and navbar brand] -->
+        <div class="navbar-header">
+            <!-- Toggle Button [handles opening navbar components on mobile screens]-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#exampleNavComponents" aria-expanded
+                "false">
+                <i class="glyphicon glyphicon-align-center"></i>
+            </button>
+
+            <!-- Navbar Brand -->
+            <a href="https://k1ngzzc.github.io/" class="navbar-brand" target="_blank">
+                首页
+            </a>
+        </div>
+
+
+        <!-- Navbar Collapse [contains navbar components such as navbar menu and forms ] -->
+        <div class="collapse navbar-collapse" id="exampleNavComponents">
+
+            <!-- Navbar Menu -->
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="https://zzc1393925530.github.io" target="_blank">博客/笔记</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/iamzhouzhich3n/" target="_blank">我的生活</a>
+                </li>
+                <li>
+                    <a href="#">关于我</a>
+                </li>
+                <!-- Navbar link with a dropdown menu -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SocialMedia
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="https://twitter.com/ZhouZhiCh3n" target="_blank">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/ZhouZhiCh3n" target="_blank">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://weibo.com/5373603440/profile?topnav=1&wvr=6" target="_blank">Weibo</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/1393925530" target="_blank">Github</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--------------------------------------------------轮播开始-------------------------------------------->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- ol指示器  ol标签与ul标签不同 ol为是有序列表 ul为是无序列表 -->
+    <ol class="carousel-indicators">
+        <!-- 指示器 -->
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    </ol>
+
+    <!-- 包装的轮播图片-->
+    <div class="carousel-inner" role="listbox">
+        <!--图片-->
+        <div class="item active">
+            <img src="images/1.jpg" alt="blackmirror">
+            <div class="carousel-caption">
+                <!--h4中的内容显示到图片上面，-->
+                <h4>Welcome home,good hunter.What is it you desire? </h4>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/2.jpg" alt="sony">
+            <div class="carousel-caption">
+            <h4>Farewell,good hunter.May you find your worth in the waking world. </h4>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/3.jpg" alt="bloodborne">
+            <div class="carousel-caption">
+            <h4>Tonight，gayman joins the hunt.</h4>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/4.jpg" alt="sony">
+            <div class="carousel-caption">
+            <h4>Very well，let the Echo becomes your strength.</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--------------------------------------------------轮播结束-------------------------------------------->
+<h3>作品..</h3>
+<br />
+<!---------主体------------------>
+<div class="container">
+    <!--声明行-->
+    <div class="row">
+        <!--为3的栅格系统，相对于一行放四个-->
+        <div class="col-sm-3">
+            <!--img-thumbnail 方形加外边框-->
+            <img src="images/5.jpg" class="img-thumbnail" alt="伪baidu" />
+            <h4>Github Pages</h4>
+            <p>仿照百度的主页开发出一个界面与相似，搜索内容来自Google的GitHub Pages;使用的工具包括Atom和GitHub desktop.</p>
+            <p>
+            <a href="https://1393925530.github.io/" class="btn btn-success" role="button" target="_blank">详细</a>
+            </p>
+        </div>
+        <div class="col-sm-3">
+            <img src="images/6.jpg" class="img-thumbnail" alt="酒店预订系统" />
+            <h4>酒店系统</h4>
+            <p>负责前期规划与调研工作，参考了一些酒店预订系统;完成了房间管理模块，参与了数据库的完善与修改，修改了界面UI.</p>
+            <p>
+            <a href="https://github.com/1393925530/HotelManagement" class="btn btn-success" role="button" target="_blank">详细</a>
+            </p>
+        </div>
+    </div>
+</div>
+<h3>技术支持</h3>
+<br />
+<div class="tech">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a>
+        </li>
+        <li role="presentation">
+            <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">CSS</a>
+        </li>
+        <li role="presentation">
+            <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Bootstrap</a>
+        </li>
+        <li role="presentation">
+            <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Ondrej</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <!--active当前选中项-->
+        <div role="tabpanel" class="tab-pane active" id="home">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h3>HTML</h3>
+                    <p style="font-size:14px">超文本标记语言，标准通用标记语言下的一个应用。 “超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。超级文本标记语言文档制作不是很复杂，但功能强大，支持不同数据格式的文件镶入，这也是万维网（WWW）盛行的原因之一.
+                    </p>
+                    <p>
+                    <a href="https://baike.baidu.com/link?url=u9Y-GKbnSqfJRgDMtSmMyBh7URrJyKBSdT3qCjXqL4kT2PuvoakOnfVKSb7h-7pf0yBhkENC4oj-gSIF-7fIgK"
+                    class="btn btn-success" role="button" target="_blank">详细了解</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521975563998&di=4e4aa876e019c8eb4bc558eb77323f6e&imgtype=0&src=http%3A%2F%2Fimage.tianjimedia.com%2FuploadImages%2F2016%2F014%2F23%2F46V820OPRS5A.jpg"
+ class="img-thumbnail" alt="html" width="200px" />
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h3>CSS</h3>
+                    <p style="font-size:14px">层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言</p>
+                    <p>
+                    <a href="https://baike.baidu.com/link?url=TF_DGox9fuj35raNx4ZZD0_ONsemuksrf-8NTsHD_2knP9Bc-AjyvADX85lBPATEE_fYWKWOjKh2aesrV5MggK"
+                    class="btn btn-success" role="button" target="_blank">详细了解</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                <img src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=1ae8cdc389d4b31cf03c93bdbfd7276f/279759ee3d6d55fbe2fea0a66f224f4a20a4dd72.jpg"
+ class="img-thumbnail" alt="CSS" width="200px"/>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="messages">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h3>Bootstrap</h3>
+                    <p style="font-size:14px">Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JavaScript 的，它简洁灵活，使得 Web 开发更加快捷。</p>
+                    <p>
+                    <a href="https://baike.baidu.com/link?url=ODlPrC7Pm1aF4_pZ6Jut6m7z_pRbAvic5Xos6yHMTcfbYFBInn1FMGHBRGWARrDxaBuGw-ElsGIWPC3k2ZC1RYtqrl9i4dpv7Z5gsAT4aja"
+                    class="btn btn-success" role="button">详细了解</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                <img src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=a5ae3bea9d0a304e462fa8a8b0a1cce3/80cb39dbb6fd526688a773faa118972bd507364b.jpg"
+                    class="img-thumbnail" alt="Bootstrap" width="200px"/>               
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="settings">
+            <div class="row">
+                <div class="col-sm-8">
+                <h3>Ondrej</h3>
+                <p style="font-size:14px">Creator of Bootstrapious,he has published Bootstrap tutorials and freebies here since 2015.
+                    </p>
+                    <p>
+                    <a href="https://bootstrapious.com/p/bootstrap-navbar" class="btn btn-success" role="button">详细了解</a>
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                <img src="https://d1r27dnp1fh4g5.cloudfront.net/i/ondrej-450.jpg" class="img-thumbnail" alt="Ondrej" width="200px"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="copyright">
+    <p style="margin-top:10px">2018@All Rights Reserved. </p>
+    <p> 工信部备案号： 懒得备 </p>
+</div>
+</body>
+<script>
+</script>
+</html>
