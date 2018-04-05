@@ -170,6 +170,18 @@ div.tech {
      font-size: 10px; 
      padding-top: 6px; 
 }
+#tooltip{ 
+    position:absolute; 
+    border:1px solid #ccc; 
+    background:#333; 
+    padding:2px; 
+    display:none; 
+    color:#fff; 
+    overflow:hidden;
+}
+#tooltip img {
+    width: 600px;
+}
 </style>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -287,7 +299,7 @@ div.tech {
         <!--为3的栅格系统，相对于一行放四个-->
         <div class="col-sm-3">
             <!--img-thumbnail 方形加外边框-->
-            <img src="images/5.jpg" class="img-thumbnail" alt="伪baidu" />
+            <img src="images/5.jpg" class="img-thumbnail" alt="伪baidu" title = "百度"/>
             <h4>Github Pages</h4>
             <p>仿照百度的主页开发出一个界面与相似，搜索内容来自Google的GitHub Pages;使用的工具包括Atom和GitHub desktop.</p>
             <p>
@@ -295,7 +307,7 @@ div.tech {
             </p>
         </div>
         <div class="col-sm-3">
-            <img src="images/6.jpg" class="img-thumbnail" alt="酒店预订系统" />
+            <img src="images/6.jpg" class="img-thumbnail" alt="酒店预订系统" title = "系统"/>
             <h4>酒店系统</h4>
             <p>负责前期规划与调研工作，参考了一些酒店预订系统;完成了房间管理模块，参与了数据库的完善与修改，修改了界面UI.</p>
             <p>
@@ -397,6 +409,6 @@ div.tech {
     <p> 工信部备案号： 懒得备 </p>
 </div>
 </body>
-<script>
+<script type="text/javascript" src="index.js">
 </script>
 </html>
