@@ -1,4 +1,4 @@
-$(function() {
+/*$(function() {
 $("div.container img").mouseover(function (e) {
     this.myTitle = this.title;
     this.title = "";
@@ -13,4 +13,4 @@ $("div.container img").mouseover(function (e) {
     this.title = this.myTitle;
     $("#tooltip").remove();
 });
-})
+})*/
