@@ -9,9 +9,8 @@
     <link href="https://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
-<style type="text/css" src = "index.css">
+<style type="text/css">
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -64,10 +63,11 @@ a {
         Navbar Styles
    ==========================================================*/
 nav.navbar {
-    background: rgb(0, 0, 0);
+    background: black;
     color: #fff;
     border-bottom: none;
     border-radius: 0;
+    margin-bottom: 0px; 
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
     padding: 15px 0;
     -webkit-transition: all 0.5s;
@@ -152,6 +152,13 @@ nav.navbar button.navbar-btn {
     nav.navbar button.navbar-btn:hover {
         background: #fff;
         color: #6172b9;
+    }
+ .navbar.compressed { /* the styles that overrides the initial style when the user scroll down*/ 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    background: #6dcc7c; 
+    color: #6dcc7c; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); 
 }
  .carousel-inner .item img { 
      height: 500px;
@@ -191,7 +198,26 @@ div.container img:hover {
 }
 </style>
 <body>
-<nav class="navbar navbar-default navbar-fixed-top">
+<!--============= Page Content =============-->
+<div class="content">
+    <div class="container">
+
+        <h1>HR,您好</h1>
+        <p>首先，谢谢您有兴趣看我的简历.我是一名非常普通的大学生,只是怀揣着自己称为前端工程师的梦想一直在小白的路上前行.
+           我非常希望能够加入到贵公司在项目中成长,因为自学的路途有些漫长.<s>而且还超级无聊啊喂</s></p>
+
+        <div class="line"></div>
+
+        <p>
+            <span>其次,相信您也有可能只是无聊看看..如果有兴趣的话,<s>老司机带带我啊</s>可以联系我.</span>
+            <span>未完待续....</span>
+        </p>
+
+    </div>
+</div>
+<!-- /.============= Page Content =============-->
+
+<nav class="navbar">
     <!-- Navbar Container -->
     <div class="container">
 
