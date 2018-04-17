@@ -14,6 +14,7 @@ $("div.container img").mouseover(function (e) {
     $("#tooltip").remove();
 });
 })*/  
+//jquery
 $(document).ready(function () {
 
 
@@ -35,4 +36,45 @@ $(document).ready(function () {
     });
 
 });
-
+//javascript
+var wrap = document.querySelector(".wrap");
+var next = document.querySelector(".arrow_right");
+var prev = document.querySelector(".arrow_left");
+next.onclick = function() {
+    next_pic();
+}
+prev.onclick = function() {
+    prev_pic();
+}
+function next_pic() {
+    var newLeft;
+    if (wrap.style.left === "-6830px") {
+        newLeft = -2732;
+    }else {
+        newLeft = parseInt(wrap.style.left) - 1366;
+    }
+    wrap.style.left = newLeft + "px";
+}
+function prev_pic() {
+    var newLeft;
+    if(wrap.style.left === "0px") {
+        newLeft = -4098;
+    }else {
+        newLeft = parseInt(wrap.style.left) + 1366;
+    }
+    wrap.style.left = newLeft + "px";
+}
+var timer = null;
+function autoPlay() {
+    timer = setInterval(function() {
+        next_pic();
+    },1000);
+}
+autoPlay();
+var container = document.querySelector(".container0");
+container.onmouseenter = function() {
+    clearInterval(timer);
+}
+container.onmouseleave = function() {
+    autoPlay();
+}
