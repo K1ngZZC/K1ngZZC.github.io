@@ -37,6 +37,12 @@ $(document).ready(function () {
 
 });
 //javascript
+function myMedia() {
+    var myScreen = screen.width;
+    if(myScreen != 1366) {
+        alert("请使用1366 * 768分辨率的设备浏览以获得最佳体验(没做适配)....")
+    }
+    else {
 var wrap = document.querySelector(".wrap");
 var next = document.querySelector(".arrow_right");
 var prev = document.querySelector(".arrow_left");
@@ -78,3 +84,6 @@ container.onmouseenter = function() {
 container.onmouseleave = function() {
     autoPlay();
 }
+}
+}
+myMedia();
