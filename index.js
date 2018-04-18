@@ -68,7 +68,7 @@ var timer = null;
 function autoPlay() {
     timer = setInterval(function() {
         next_pic();
-    },1000);
+    },1500);
 }
 autoPlay();
 var container = document.querySelector(".container0");
