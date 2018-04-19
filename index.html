@@ -213,8 +213,29 @@ nav.navbar button.navbar-btn {
 h3 {
     margin-left: 100px;
 }
-div.tech {
+div#tab {
     margin-left: 5%;
+}
+div#tab  li {
+    background: #fff;
+    cursor: pointer;
+    float: left;
+    list-style: none;
+    height: 29px;
+    line-height: 29px;
+    padding: 0px 10px;
+    margin: 0 10px;
+    border: 1px solid #BBB;
+}
+div#tab  li.on {
+    border-top: 2px solid black;
+    border-bottom: 2px solid #fff;
+}
+.hide {
+    display: none;
+}
+.row {
+    margin-left: 2%;
 }
 div.container img {
     cursor: pointer;
@@ -223,6 +244,7 @@ div.container img {
 div.container img:hover {
     transform: scale(1.2);
 }
+
  #copyright { 
      background-color: #202020; 
      height: 100px; color: #524f4f; 
@@ -411,28 +433,23 @@ div.container img:hover {
 </div>
 <h3>技术支持</h3>
 <br />
-<div class="tech">
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active">
-            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">HTML</a>
+<div id="tab">
+<ul>
+        <li class="on">
+           HTML
         </li>
-        <li role="presentation">
-            <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">CSS</a>
+        <li class="off">
+            CSS
         </li>
-        <li role="presentation">
-            <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Bootstrap</a>
+        <li class="off">
+            Bootstrap
         </li>
-        <li role="presentation">
-            <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Ondrej</a>
+        <li class="off">
+            Ondrej
         </li>
-    </ul>
-
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <!--active当前选中项-->
-        <div role="tabpanel" class="tab-pane active" id="home">
-            <div class="row">
-                <div class="col-sm-8">
+</ul>
+<div class="show" id="cont">
+                <!--<div class="col-sm-8">-->
                     <h3>HTML</h3>
                     <p style="font-size:14px">超文本标记语言，标准通用标记语言下的一个应用。 “超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。超级文本标记语言文档制作不是很复杂，但功能强大，支持不同数据格式的文件镶入，这也是万维网（WWW）盛行的原因之一.
                     </p>
@@ -440,62 +457,57 @@ div.container img:hover {
                     <a href="https://baike.baidu.com/link?url=u9Y-GKbnSqfJRgDMtSmMyBh7URrJyKBSdT3qCjXqL4kT2PuvoakOnfVKSb7h-7pf0yBhkENC4oj-gSIF-7fIgK"
                     class="btn btn-success" role="button" target="_blank">详细了解</a>
                     </p>
-                </div>
-                <div class="col-sm-4">
+                <!--</div>-->
+                <!--<div class="col-sm-4">-->
                     <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521975563998&di=4e4aa876e019c8eb4bc558eb77323f6e&imgtype=0&src=http%3A%2F%2Fimage.tianjimedia.com%2FuploadImages%2F2016%2F014%2F23%2F46V820OPRS5A.jpg"
  class="img-thumbnail" alt="html" width="200px" />
                 </div>
-            </div>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="profile">
-            <div class="row">
-                <div class="col-sm-8">
+            <!--</div>
+        </div>-->
+           <div class="hide" id="cont">
+                <!--<div class="col-sm-8">-->
                     <h3>CSS</h3>
                     <p style="font-size:14px">层叠样式表(英文全称：Cascading Style Sheets)是一种用来表现HTML（标准通用标记语言的一个应用）或XML（标准通用标记语言的一个子集）等文件样式的计算机语言</p>
                     <p>
                     <a href="https://baike.baidu.com/link?url=TF_DGox9fuj35raNx4ZZD0_ONsemuksrf-8NTsHD_2knP9Bc-AjyvADX85lBPATEE_fYWKWOjKh2aesrV5MggK"
                     class="btn btn-success" role="button" target="_blank">详细了解</a>
                     </p>
-                </div>
-                <div class="col-sm-4">
+                <!--</div>-->
+                <!--<div class="col-sm-4">-->
                 <img src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=1ae8cdc389d4b31cf03c93bdbfd7276f/279759ee3d6d55fbe2fea0a66f224f4a20a4dd72.jpg"
  class="img-thumbnail" alt="CSS" width="200px"/>
-                </div>
+                <!--</div>-->
             </div>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="messages">
-            <div class="row">
-                <div class="col-sm-8">
+        
+            <div class="hide" id="cont">
+               <!-- <div class="col-sm-8">-->
                     <h3>Bootstrap</h3>
                     <p style="font-size:14px">Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JavaScript 的，它简洁灵活，使得 Web 开发更加快捷。</p>
                     <p>
                     <a href="https://baike.baidu.com/link?url=ODlPrC7Pm1aF4_pZ6Jut6m7z_pRbAvic5Xos6yHMTcfbYFBInn1FMGHBRGWARrDxaBuGw-ElsGIWPC3k2ZC1RYtqrl9i4dpv7Z5gsAT4aja"
                     class="btn btn-success" role="button">详细了解</a>
                     </p>
-                </div>
-                <div class="col-sm-4">
+                <!--</div>-->
+                <!--<div class="col-sm-4">-->
                 <img src="https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=a5ae3bea9d0a304e462fa8a8b0a1cce3/80cb39dbb6fd526688a773faa118972bd507364b.jpg"
                     class="img-thumbnail" alt="Bootstrap" width="200px"/>               
-                </div>
+                <!--</div>-->
             </div>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="settings">
-            <div class="row">
-                <div class="col-sm-8">
+        
+
+            <div class="hide" id="cont">
+                <!--<div class="col-sm-8">-->
                 <h3>Ondrej</h3>
 <p style="font-size:14px">Bootstrapious的创始人。从2015年开始，他发布过很多与bootstrap相关的教程。Bootstrapious是一个致力于bootstrap研究的一个网站。
                     </p>
                     <p>
                     <a href="https://bootstrapious.com/p/bootstrap-navbar" class="btn btn-success" role="button">详细了解</a>
                     </p>
-                </div>
-                <div class="col-sm-4">
+               <!-- </div>-->
+                <!--<div class="col-sm-4">-->
                 <img src="https://d1r27dnp1fh4g5.cloudfront.net/i/ondrej-450.jpg" class="img-thumbnail" alt="Ondrej" width="200px"/>
-                </div>
+               <!--</div>-->
             </div>
-        </div>
-    </div>
-</div>
 </div>
 <div id="copyright">
     <p style="margin-top:10px">2018@All Rights Reserved. </p>
