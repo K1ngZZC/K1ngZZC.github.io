@@ -37,7 +37,7 @@ $(document).ready(function () {
 
 });
 //javascript
-function myMedia() {
+/*function myMedia() {
     var myScreen = screen.width;
     if(myScreen != 1366) {
         alert("请使用1366 * 768分辨率的设备浏览以获得最佳体验(没做适配)....")
@@ -54,19 +54,19 @@ prev.onclick = function() {
 }
 function next_pic() {
     var newLeft;
-    if (wrap.style.left === "-6830px") {
-        newLeft = -2732;
+    if (wrap.style.left === "-2000px") {
+        newLeft = -800;
     }else {
-        newLeft = parseInt(wrap.style.left) - 1366;
+        newLeft = parseInt(wrap.style.left) - 400;
     }
     wrap.style.left = newLeft + "px";
 }
 function prev_pic() {
     var newLeft;
     if(wrap.style.left === "0px") {
-        newLeft = -4098;
+        newLeft = -1200;
     }else {
-        newLeft = parseInt(wrap.style.left) + 1366;
+        newLeft = parseInt(wrap.style.left) + 400;
     }
     wrap.style.left = newLeft + "px";
 }
@@ -86,7 +86,7 @@ container.onmouseleave = function() {
 }
 }
 }
-myMedia();
+myMedia(); */
 window.onload = function () {
     var myTab = document.getElementById("tab");
     var myUl = myTab.getElementsByTagName("ul")[0];

@@ -63,23 +63,22 @@ a {
   color: #eee !important;
 }
 /* 轮播图 */
-.container0 { 
+/*.container0 { 
     position: relative; 
-    width: 1366px; 
-    height: 500px; 
-    /*margin: 100px auto 0 auto;*/
+    width: 400px;
+    height: 250px;
     overflow: hidden; 
-} 
+}
 .wrap { 
     position: absolute; 
-    width: 8196px; 
-    height: 768px; 
+    width: 400px; 
+    height: 250px; 
     z-index: 1; 
 } 
 .container0 .wrap img { 
     float: left; 
-    width: 1366px; 
-    height: 768px; 
+    width: 400px; 
+    height: 250px; 
 } 
 .container0 .arrow { 
     position: absolute; 
@@ -102,7 +101,7 @@ a {
 } 
 .container0 .arrow:hover { 
     background: rgba(0, 0, 0, 0.1); 
-}
+} */
 
 
 /* ==========================================================
@@ -207,13 +206,16 @@ nav.navbar button.navbar-btn {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); 
 }
  .carousel-inner .item img { 
-     height: 400em;
+     height: 40em;
      width: 100%; 
 }
 h3 {
     margin-left: 100px;
 }
 div#tab {
+    margin-left: 5%;
+}
+div#tab ul {
     margin-left: 5%;
 }
 div#tab  li {
@@ -230,6 +232,13 @@ div#tab  li {
 div#tab  li.on {
     border-top: 2px solid black;
     border-bottom: 2px solid #fff;
+}
+div#tab div {
+    height: 500px;
+    margin-left: 5%;
+}
+div#tab div p {
+    width: 80%;
 }
 .hide {
     display: none;
@@ -343,22 +352,22 @@ div.container img:hover {
     </div>
 </nav>
 
-<!-- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+ <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-        <!-- 指示器 
+        <!-- 指示器 -->
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
     </ol>
 
-    <!-- 包装的轮播图片
+    <!-- 包装的轮播图片 -->
     <div class="carousel-inner" role="listbox">
-        <!--图片
+        <!--图片-->
         <div class="item active">
             <img src="images/1.jpg" alt="blackmirror">
             <div class="carousel-caption">
-                <!--h4中的内容显示到图片上面，
+                <!--h4中的内容显示到图片上面，-->
                 <h4>Talk is cheap. Show me the code.    -Torvalds, Linus</h4>
             </div>
         </div>
@@ -382,7 +391,7 @@ div.container img:hover {
         </div>
     </div>
 
-    <!-- Controls 
+    <!-- Controls -->
     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -392,9 +401,11 @@ div.container img:hover {
         <span class="sr-only">Next</span>
     </a>
 </div>
--->
-<div class="container0">
-    <div class="wrap" style="left:-1366px">
+
+<!--<div class="container-fluid">
+    <div class="row">-->
+<!--<div class="container0">
+    <div class="wrap" style="left:-800px">
         <img src="images/4.jpg" alt="">
         <img src="images/1.jpg" alt="">
         <img src="images/2.jpg" alt="">
@@ -405,6 +416,8 @@ div.container img:hover {
     <a href="javascript:;" class="arrow arrow_left">&lt;</a>
     <a href="javascript:;" class="arrow arrow_right">&gt;</a>
 </div>
+<!--</div>
+</div>-->
 <h3>作品..</h3>
 <br />
 <!---------主体------------------>
