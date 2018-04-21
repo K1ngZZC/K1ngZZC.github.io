@@ -15,6 +15,9 @@ $("div.container img").mouseover(function (e) {
 });
 })*/  
 //jquery
+$('img.lazy').lazyload({
+    effect: "fadeIn"
+});
 $(document).ready(function () {
 
 
